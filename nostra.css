@@ -443,15 +443,15 @@ textarea{
 
 .products-list{
     display: flex;
-    
     justify-content: space-between;
     gap: 40px;
-    margin-top: 2%;
-    
+    margin-top: 2%; 
 }
 
+
+
 .product-container{
-    width: 28%;
+    width: 30%;
     font-size: 15px;
 }
 
@@ -570,20 +570,30 @@ textarea{
         height: 80px;
     }
 
+    .products-list{
+        gap: 20px;
+    }
+
     .filter-section{
-        margin-top: 30%;
+     margin-top: 30%;
     font-size: 8px; 
+    }
+    
+    .search{
+        width: 80%;
     }
 
     .product-container{
-   width: 85px;
-    font-size: 7px;
+    font-size: 6px;
    }
 
    .conatiner__sec2{
-    margin-left: 5%;
+    margin-left: 4%;
    }
    
+   .container__sec2-products{
+    width: 90%;
+     }
     
 
  
