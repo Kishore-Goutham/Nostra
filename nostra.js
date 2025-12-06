@@ -72,3 +72,67 @@ function menu(){
 function x(){
     menulist.classList.remove("show")
 }
+
+
+let products = document.querySelectorAll(".product-container")
+
+
+function productshow1(event){
+    
+    for(let i=0; i<products.length;i++){
+
+        if(!event.target.checked){
+            if(i%2==0){
+           products[i].classList.remove("hidden")
+            }
+        }
+        else{
+        if(i%2==0){
+            products[i].classList.add("hidden")
+        }
+         if(i%2!=0){
+            products[i].classList.remove("hidden")
+        }
+    }
+    }
+}
+
+function productshow2(event){
+    
+    for(let i=0; i<products.length;i++){
+
+        if(!event.target.checked){
+            if(i%2!=0){
+           products[i].classList.remove("hidden")
+            }
+        }
+        else{
+        if(i%2!=0){
+            products[i].classList.add("hidden")
+        }
+        if(i%2==0){
+            products[i].classList.remove("hidden")
+        }
+    }
+    }
+}
+
+function latest(event){
+    for(let i=0; i<products.length;i++){
+         if(!event.target.checked){
+            if(i>3){
+                products[i].classList.remove("hidden")
+            }
+         }else{
+            if(i>3){
+                products[i].classList.add("hidden")
+            }
+         }
+    }
+}
+
+let search = document.querySelector(".search__input")
+
+function searchX(){
+    search.value =" ";
+}
