@@ -115,6 +115,7 @@ function productshow2(event){
         }
     }
     }
+    
 }
 
 function latest(event){
@@ -133,6 +134,31 @@ function latest(event){
 
 let search = document.querySelector(".search__input")
 
+// let products = document.querySelectorAll(".product-container")
+
 function searchX(){
-    search.value =" ";
+    search.value ="";
+
+    for(let i=0;i<products.length;i++){
+        products[i].classList.remove("hidden");
+    }
+}
+
+function searchProducts(){
+
+    let value = search.value.toLowerCase();
+
+    for(let i=0;i<products.length;i++){
+
+        let productContainer = products[i].getElementsByTagName("h2");
+        
+        let productName = productContainer[0].textContent.toLowerCase();
+        
+        if(productName.includes(value)){
+            products[i].classList.remove("hidden")
+        }
+        else{
+            products[i].classList.add("hidden");
+        }
+    }
 }
