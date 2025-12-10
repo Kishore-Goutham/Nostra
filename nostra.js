@@ -151,7 +151,6 @@ function searchProducts(){
     for(let i=0;i<products.length;i++){
 
         let productContainer = products[i].getElementsByTagName("h2");
-        
         let productName = productContainer[0].textContent.toLowerCase();
         
         if(productName.includes(value)){
@@ -162,3 +161,6 @@ function searchProducts(){
         }
     }
 }
+
+
+

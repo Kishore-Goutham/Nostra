@@ -366,21 +366,21 @@ a{
     padding: 70px;
     color: white;
     margin-top: 2%;
-    width: fit-content;
+    width: 80%;
     border-radius: 10px;
     margin:auto
 }
 
 .contactform input{
-    width: 1000px;
+    width: 100%;
     height: 65px;
     margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
     border-radius: 10px;
 }
 
 textarea{
-    width: 1000px;
+    width: 100%;
     height: 120px;
       margin-top: 1%;
     margin-bottom: 1%;
@@ -454,16 +454,16 @@ textarea{
 
 }
 
-
-.products-list{
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+.container__sec2-products{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
     margin-top: 2%; 
+    
 }
 
 .product-container{
-    width: 30%;
+    /* width: 30%; */
     font-size: 15px;
     overflow: hidden;
 }
@@ -481,11 +481,6 @@ button:active{
      
     background-color: gray;
 }
-
-
-
-
-
 
 
 
@@ -580,12 +575,10 @@ button:active{
     }
 
     .contactform input{
-        width: 300px;
         height: 50px;
     }
 
     textarea{
-        width: 300px;
         height: 80px;
     }
 
